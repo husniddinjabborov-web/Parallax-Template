@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 60vh;
+    background-image: url('./img/parallax1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 15px gray;
+    z-index: 9999999999999999999999;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li a,
+header nav ul li span {
+    padding: 8px 16px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+header nav ul:last-child li:last-child {
+    display: none;
+}
+
+header h1 {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateY(50%) translateX(-50%);
+    background-color: #404040;
+    color: white;
+    padding: 8px 16px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    white-space: nowrap;
+}
+
+/*  */
+
+main {
+    margin: auto;
+    width: min(100%, 1000px);
+}
+
+.about-me {
+    margin-top: 40px;
+}
+
+.about-me h2,
+.about-me p:nth-child(2) {
+    text-align: center;
+}
+
+.about-me h2,
+.about-me>p {
+    padding: 8px 16px;
+    line-height: 1.6;
+    color: gray;
+}
+
+.about-me .about-container {
+    display: flex;
+    margin-top: 40px;
+}
+
+.about-me .about-container .about-item {
+    flex: 100%;
+}
+
+.about-me .about-container .about-item strong {
+    display: block;
+    text-align: center;
+    padding: 16px 0 40px 0;
+    color: gray;
+    font-size: large;
+}
+
+.about-me .about-container .about-item img {
+    padding: 8px 16px;
+    opacity: 0.6;
+    width: 100%;
+}
+
+.about-me .about-container .about-item img:hover {
+    opacity: 1;
+}
+
+.about-me>p:nth-child(5) {
+    text-align: center;
+    padding: 32px 16px;
+    font-size: x-large;
+}
+
+.about-foiz>p {
+    letter-spacing: 8px;
+    padding: 16px;
+}
+
+.about-foiz .about-item {
+    width: calc(100% - 32px);
+    margin: auto;
+    height: 30px;
+    background-color: #F1F1F1;
+}
+
+.about-foiz .about-item span {
+    display: block;
+    height: 100%;
+    line-height: 30px;
+    text-align: center;
+    background-color: #616161;
+    color: white;
+}
+
+.about90 span {
+    width: calc(100% - 10%);
+}
+
+.about85 span {
+    width: calc(100% - 25%);
+}
+
+.about75 span {
+    width: calc(100% - 35%);
+}
+
+.about-stat {
+    width: 100%;
+    background-color: #616161;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 30px 0;
+    gap: 50px;
+}
+
+.about-stat .about-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-stat .about-item span,
+.about-stat .about-item p {
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+.about-stat .about-item span {
+    font-size: 1.5em;
+}
+
+.portfolio {
+    width: 100%;
+    height: 50vh;
+    background-image: url('./img/parallax2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+.portfolio h2 {
+    text-align: center;
+    line-height: 50vh;
+    color: white;
+    font-weight: 100;
+    font-size: 2.5em;
+    letter-spacing: 8px;
+}
+
+.work {
+    margin: auto;
+    width: min(100%, 1000px);
+    margin-top: 16px;
+}
+
+.work h2,
+.work p {
+    text-align: center;
+    font-weight: 100;
+    padding: 8px 16px;
+    line-height: 2;
+    color: gray;
+}
+
+.work-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+.work-container .work-item {
+    flex: 0 0 calc(25% - 20px);
+    cursor: pointer;
+}
+
+.work-container .work-item:hover {
+    opacity: 0.7;
+}
+
+.work button {
+    text-align: center;
+    display: flex;
+    margin: 50px auto;
+    padding: 16px 32px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.work button:hover {
+    background-color: rgb(193, 192, 192);
+}
+
+.contact {
+    width: 100%;
+    height: 50vh;
+    background-image: url('./img/parallax3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+.contact h2 {
+    text-align: center;
+    line-height: 50vh;
+    color: white;
+    font-weight: 100;
+    font-size: 2.5em;
+    letter-spacing: 8px;
+}
+
+.where {
+    margin: auto;
+    width: min(100%, 1000px);
+    margin-top: 16px;
+    padding: 30px;
+}
+
+.where h2,
+.where>p {
+    text-align: center;
+    font-weight: 100;
+    padding: 8px 16px;
+    line-height: 2;
+    color: gray;
+}
+
+.where-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.where-container .where-img {
+    flex: 0 0 calc(35% - 20px);
+}
+
+.where-container .where-img img {
+    height: 60%;
+    border-radius: 5px;
+}
+
+.where-container .where-about {
+    flex: 0 0 65%;
+    text-align: left;
+}
+
+.where-container .where-about address {
+    font-style: normal;
+}
+
+.where-container .where-about address p {
+    padding: 8px 16px;
+    line-height: 2;
+    color: gray;
+}
+
+.where-container .where-about form p {
+    padding: 8px 16px;
+    line-height: 2;
+    color: gray;
+}
+
+.where-container .where-about form input {
+    padding: 16px;
+    width: calc(100% - 16px);
+    margin: 8px;
+    border: none;
+    border: 1px solid rgb(183, 183, 183);
+}
+
+.where-container .where-about form .input-flex {
+    display: flex;
+}
+
+.where-container .where-about form button {
+    padding: 16px;
+    width: fit-content;
+    float: right;
+    margin: 8px;
+    border: none;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.where-container .where-about form button:hover {
+    background-color: rgb(165, 165, 165);
+    color: black;
+}
+footer {
+    background-color: #666666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+footer:hover {
+    background-color: black;
+}
+
+footer p:first-child a {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 16px 32px;
+    display: inline-block;
+    font-size: 0.5em;
+}
+footer .ftr-nav {
+    display: inline-block;
+    padding: 32px 64px;
+}
+footer .ftr-nav i {
+    color: white;
+    cursor: pointer;
+    font-size: xx-large;
+}
+
+footer>p {
+    color: white;
+    font-size: xx-large;
+    padding: 32px 64px;
+}
+footer > p a {
+    color: white;
+}
+
+@media (max-width: 600px) {
+
+    header nav ul:first-child li:not(:first-child),
+    header nav ul:last-child li:first-child {
+        display: none;
+    }
+
+    header nav ul:last-child li:last-child {
+        display: block;
+    }
+
+    header h1 span {
+        display: none;
+    }
+
+    .about-me .about-container .about-item:last-child {
+        display: none;
+    }
+
+    .about-stat {
+        flex-direction: column;
+    }
+
+    .work-container .work-item {
+        flex: 1 1 100%;
+    }
+
+    .where-container {
+        flex-direction: column;
+    }
+}
